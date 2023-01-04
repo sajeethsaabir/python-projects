@@ -25,6 +25,15 @@ def remainder(a, b):
     return a % b
 
 
+def history():
+    if history_list:
+        for index, calc in enumerate(history_list):
+            print(calc)
+    else:
+        print("No calculations to show")
+        return 0
+
+
 def select_op(choice):
     if (choice == '?'):
         return history()
