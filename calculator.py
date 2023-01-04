@@ -1,3 +1,6 @@
+history_list = []
+
+
 def add(a, b):
     return a + b
 
