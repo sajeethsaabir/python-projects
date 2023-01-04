@@ -9,3 +9,11 @@ while True:
     print("7.Terminate: # ")
     print("8.Reset    : $ ")
     print("8.History  : ? ")
+
+
+choice = input("Enter choice(+,-,*,/,^,%,#,$,?): ")
+print(choice)
+if (select_op(choice) == -1):
+    # program ends here
+    print("Done. Terminating")
+    exit()
