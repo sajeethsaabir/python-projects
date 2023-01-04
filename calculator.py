@@ -25,6 +25,68 @@ def remainder(a, b):
     return a % b
 
 
+def select_op(choice):
+    if (choice == '?'):
+        return history()
+    if (choice == '#'):
+        return -1
+    elif (choice == '$'):
+        return 0
+    elif (choice in ('+', '-', '*', '/', '^', '%')):
+        while (True):
+            num_1_s = str(input("Enter first number: "))
+            print(num_1_s)
+            if num_1_s.endswith('$'):
+                return 0
+            if num_1_s.endswith('#'):
+                return -1
+
+            try:
+                num_1_s = float(num_1_s)
+                break
+            except:
+                print("Not a valid number,please enter again")
+                continue
+
+        while (True):
+            num_2_s = str(input("Enter second number: "))
+            print(num_2_s)
+            if num_2_s.endswith('$'):
+                return 0
+            if num_2_s.endswith('#'):
+                return -1
+            try:
+                num_2_s = float(num_2_s)
+                break
+            except:
+                print("Not a valid number,please enter again")
+                continue
+
+        result = 0.0
+        last_calculation = ""
+        if choice == '+':
+            result = add(num_1_s, num_2_s)
+        elif choice == '-':
+            result = subtract(num_1_s, num_2_s)
+        elif choice == '*':
+            result = multiply(num_1_s, num_2_s)
+        elif choice == '/':
+            result = divide(num_1_s, num_2_s)
+        elif choice == '^':
+            result = power(num_1_s, num_2_s)
+        elif choice == '%':
+            result = remainder(num_1_s, num_2_s)
+        else:
+            print("Something Went Wrong")
+
+        final_calculation = "{0} {1} {2} = {3}".format(
+            num_1_s, choice, num_2_s, result)
+        print(final_calculation)
+        history_list.append(final_calculation)
+    else:
+        print("Unrecognized operation")
+
+
 while True:
     print("Select operation.")
     print("1.Add      : + ")
