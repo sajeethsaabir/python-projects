@@ -16,3 +16,13 @@ def magazine_no(info: Tuple[str, int]) -> int:
     need_mag = bullt_fire / mag_cap
 
     return ceil(need_mag)
+
+
+var1 = magazine_no(["PSG1", 6])
+print(var1)
+
+var2 = magazine_no(["M4A1", 11])
+print(var2)
+
+var3 = magazine_no(["PT92", 7])
+print(var3)
