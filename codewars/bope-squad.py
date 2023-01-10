@@ -26,3 +26,15 @@ print(var2)
 
 var3 = magazine_no(["PT92", 7])
 print(var3)
+
+
+# Second solution:
+
+weapons_info = {"PT92": 17,
+                "M4A1": 30,
+                "M16A2": 30,
+                "PSG1": 5}
+
+
+def count_mag_no(n):
+    return ceil(3 * n[1] / weapons_info[n[0]])
