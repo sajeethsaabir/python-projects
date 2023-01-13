@@ -4,6 +4,13 @@ def remove_vowel(string):
 
     if string.isalpha() and string.isupper():
         return string
+    elif string.isalpha() and string.islower():
+        for letter in string:
+            if letter in vowels:
+                string = string.replace(letter, "")
+        return string
 
 
 print(remove_vowel("HELLOOO"))
+print(remove_vowel("apple"))
+print(remove_vowel("sajeet"))
