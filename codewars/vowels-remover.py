@@ -19,3 +19,6 @@ def remove_vowel(string):
 print(remove_vowel("HELLOOO"))
 print(remove_vowel("apple"))
 print(remove_vowel("sajeet"))
+print(remove_vowel("I loVe PytHOn"))
+print(remove_vowel("jAvaScript Is Also grEat"))
+print(remove_vowel("fooo fOOOo"))
