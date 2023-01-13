@@ -9,6 +9,11 @@ def remove_vowel(string):
             if letter in vowels:
                 string = string.replace(letter, "")
         return string
+    else:
+        for letter in string:
+            if letter in vowels:
+                string = string.replace(letter, "")
+        return string
 
 
 print(remove_vowel("HELLOOO"))
