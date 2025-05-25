@@ -5,8 +5,8 @@
 - Different Python3 codes will be presented
 
 ## Tasks to be Done
-- [] Complete NYU Lab Assessments
-- [] Complete Google Python Cert Final Assessment
+- Complete NYU Lab Assessments
+- Complete Google Python Cert Final Assessment
 
 # Contributor
 
